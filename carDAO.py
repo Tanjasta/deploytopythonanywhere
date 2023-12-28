@@ -1,7 +1,7 @@
 # Code reference: https://github.com/andrewbeattycourseware/datarepresentation/blob/main/code/Topic10-server1linktoDB.py/bookDAO.py
 
 import mysql.connector
-import dbconfig as cfg
+import dbconfigpa as cfg
 
 # Define a class for handling database operations.
 class carDAO:
