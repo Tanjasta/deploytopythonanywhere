@@ -161,7 +161,7 @@
     }
     function getAllAjax(){
         $.ajax({
-            "url": "http://127.0.0.1:5000/cars",
+            "url": "/cars",
             "method":"GET",
             "data":"",
             "dataType": "JSON",
@@ -182,7 +182,7 @@
         //var car = {"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000}
         console.log(JSON.stringify(car));
         $.ajax({
-            "url": "http://127.0.0.1:5000/cars",
+            "url": "/cars",
             "method":"POST",
             "data":JSON.stringify(car),
             "dataType": "JSON",
@@ -203,7 +203,7 @@
         //var car = {"reg":"12 D 1234","price":8000}
         console.log(JSON.stringify(car));
         $.ajax({
-            "url": "http://127.0.0.1:5000/cars/"+encodeURI(car.id),
+            "url": "/cars/"+encodeURI(car.id),
             "method":"PUT",
             "data":JSON.stringify(car),
             "dataType": "JSON",
@@ -221,7 +221,7 @@
         
         //console.log(JSON.stringify('deleting '+id));
         $.ajax({
-            "url": "http://127.0.0.1:5000/cars/"+encodeURI(id),
+            "url": "/cars/"+encodeURI(id),
             "method":"DELETE",
             "data":"",
             "dataType": "JSON",
